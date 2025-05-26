@@ -20,6 +20,8 @@ import com.satyam.taskflow.entity.Task;
 import com.satyam.taskflow.service.TaskService;
 import com.satyam.taskflow.utility.ResponseStructure;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping(value = "/api/tasks")
 public class TaskController {
@@ -28,7 +30,7 @@ public class TaskController {
 	private TaskService taskService;
 
 	@PostMapping
-	public ResponseEntity<ResponseStructure<Task>> create(@RequestBody Task t) {
+	public ResponseEntity<ResponseStructure<Task>> create(@Valid @RequestBody Task t) {
 		ResponseStructure<Task> rs = new ResponseStructure<Task>();
 		rs.setStatuscode(HttpStatus.FOUND.value());
 		rs.setMessage("Task Objects Created Successfully");
@@ -55,12 +57,12 @@ public class TaskController {
 	}
 	
 	@DeleteMapping("/{id}")
-	public ResponseEntity<ResponseStructure<Task>> delete(@PathVariable Long id){
+	public ResponseEntity<Task> delete(@PathVariable Long id){
 		ResponseStructure<Task> rs  = new ResponseStructure<Task>();
 		rs.setStatuscode(HttpStatus.ACCEPTED.value());
 		rs.setMessage("Task Object is Successfully Deleted");
 		rs.setData(taskService.deleteTask(id));
-		return new ResponseEntity<ResponseStructure<Task>>(rs,HttpStatus.ACCEPTED);
+		return ResponseEntity.status(HttpStatus.ACCEPTED).body(rs.getData());
 	}
 }
  
