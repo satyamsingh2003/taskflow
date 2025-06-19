@@ -41,7 +41,6 @@ public class TaskServiceImpl implements TaskService{
 		else 
 		{
 			 Task updatedTask = optional.get();
-			 updatedTask.setId(id);
 			 updatedTask.setCompleted(t.isCompleted());
 			 updatedTask.setDescription(t.getDescription());
 			 updatedTask.setTitle(t.getTitle());

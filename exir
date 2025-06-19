@@ -1,0 +1,35 @@
+[33mcommit fbec65dad93bcc36a5303ab33a8088fee55d40b0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: satyamsingh2003 <satyamischill@gmail.com>
+Date:   Thu Jun 5 16:06:45 2025 +0530
+
+    Added Spring Security
+
+[33mcommit cda9b0800a82ebf381ba5762e9d19f5410321d0d[m
+Author: satyamsingh2003 <satyamischill@gmail.com>
+Date:   Tue May 27 03:09:53 2025 +0530
+
+    Added Swagger API Dependency To Check APIs
+
+[33mcommit 212c444915eefb22a739fd6e97f472dcf826e9d5[m
+Author: satyamsingh2003 <satyamischill@gmail.com>
+Date:   Tue May 27 02:35:49 2025 +0530
+
+    Added Response & Error Structure, DTO Layer , Added Methods , Custom Exceptions , Utility Package,completed Backend
+
+[33mcommit cfe87de10219b9b1afe89d9dc4e46c7231884961[m
+Author: satyamsingh2003 <satyamischill@gmail.com>
+Date:   Tue May 27 00:20:51 2025 +0530
+
+    Added Repository Layer , Controller Layer , Entity
+
+[33mcommit 75de1a254e411a0d0bf22a42cb68c58d9319913b[m
+Author: satyamsingh2003 <satyamischill@gmail.com>
+Date:   Mon May 26 23:27:16 2025 +0530
+
+    Added Auto GitHub Push
+
+[33mcommit 066034cc43cd27a982e566714bd6149c3f15010d[m
+Author: satyamsingh2003 <satyamischill@gmail.com>
+Date:   Mon May 26 23:02:42 2025 +0530
+
+    Initial Commit : TaskFlow setup

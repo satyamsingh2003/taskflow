@@ -1,4 +1,4 @@
-package com.satyam.taskflow.controller;
+package com.satyam.taskflow.controller.task;
 
 
 import java.util.List;
@@ -47,6 +47,7 @@ public class TaskController {
 		return new ResponseEntity<ResponseStructure<List<TaskDTO>>>(rs,HttpStatus.FOUND);
 	}
 	
+	// it extracts data from URL path
 	@PutMapping("/{id}")
 	public ResponseEntity<ResponseStructure<Task>> update(@PathVariable Long id,@RequestBody Task t){
 		ResponseStructure<Task> rs = new ResponseStructure<Task>();
