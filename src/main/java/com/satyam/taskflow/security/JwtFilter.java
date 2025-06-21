@@ -45,5 +45,11 @@ protected void doFilterInternal(HttpServletRequest request, HttpServletResponse 
 	filterChain.doFilter(request, response);
 }
 
+@Override
+protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException{
+	String path = request.getServletPath();
+	return path.equals("/auth/login") || path.equals("/auth/register");
+}
+
 
 }
